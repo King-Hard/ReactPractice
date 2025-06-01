@@ -1,13 +1,59 @@
 Step 1: Creating App and Main jsx file - check
+App.jsx
+Main.jsx
+
 Step 2: Creating Folder Structure - check
-Step 3: Creating Components - check
-Step 4: Creating RootLayut and importing Header and Footer
-Step 5: Importing {Outlet} from react-router-dom sa RootLayout 
-Step 5: Installing react-router-dom
-Step 6: Go in Main.jsx and importing {BrowserRouter} from react-router-dom, then on strickmode ilagay natin yung open and close tag ng BrowserRouter
-Step 7: Next sa App.jsx naman tayo importing {Routes, Route} then creating Routes and Route
-Step 8: 
-Step 9: 
-Step 10: 
-Step 6: 
-Step 6: 
+Components
+Shared
+Partial
+Layout
+
+Step 3: Creating Components 
+Header.jsx
+Footer.jsx
+
+Step 4: install react-router-dom
+
+Step 5: Creating RootLayout, Importing Header and Footer, and Importing {Outlet}
+import Header from '../Partial/Header'
+import Footer from '../Partial/Footer'
+
+const RootLayout = () => {
+    return(
+        <>
+            <Header />
+                <Outlet />
+            <Footer />
+        </>
+    )
+}
+
+export default RootLayout
+
+Step 6: After installing react-roter-dom punta tayo sa Main.jsx setup tayo importing {BrowserReact} then add in StrickMode 
+import { BrowserReact } from 'reacr-router-dom'
+
+<StrickMode>
+    <BrowserRouter>
+        <App />
+    <BrowserRouter>
+</StrickMode>
+
+
+Step 7: After setup in Main.jsx, sa App.jsx naman tayo import {Routes, Route}, import RootLayout, import NotFound, import Home, import About, import Contact and last Setup.
+import {Routes, Route} from 'react-router-dom'
+import RootLayout from './Shared/Layout/RootLayout'
+import NotFound from './Components/NotFound'
+import Home from './Components/HomeFolder/Home'
+import About from './Components/AboutFolder/About'
+import Contact from './Components/ContactFolder/Contact'
+
+<Routes>
+    <Route element='<RootLayout />'>
+        <Route path='/' element={<Home />}/>
+        <Route path='About' element={<Home />}/>
+        <Route path='/' element={<Home />}/>
+    </Route>
+
+    <Route path='NotFound' element={<NotFound />}>
+<Routes>
