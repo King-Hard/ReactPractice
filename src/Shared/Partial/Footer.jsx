@@ -2,7 +2,9 @@ const Footer = () => {
     return(
         <>
         
-            <div>Footer</div>
+            <div className='border rounded-xl rounded-t-xl p-10 absolute bottom-0 w-screen'>
+                Footer
+            </div>
         
         </>
     )
