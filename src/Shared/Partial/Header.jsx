@@ -8,7 +8,7 @@ const Header = () => {
                 <div>Header</div>
 
                 <div className='space-x-10'>
-                    <Link to="/Home" className='hover:text-red-500'>Home</Link>
+                    <Link to="/" className='hover:text-red-500'>Home</Link>
                     <Link to="/About" className='hover:text-violet-500'>About</Link>
                     <Link to="/Contact" className='hover:text-green-500'>Contact</Link>
                 </div>

@@ -3,7 +3,7 @@ const Home = () => {
         <>
         
             <div className="bg-red-300 p-5">
-                Home Page
+                Welcome to my Home Page
             </div>
         
         </>
