@@ -1,13 +1,13 @@
-const Cars = () => {
+const Timer = () => {
     return(
         <>
         
             <div className="bg-blue-300 p-5">
-                Cars Page
+                Timer Page
             </div>
         
         </>
     )
 }
 
-export default Cars
+export default Timer
