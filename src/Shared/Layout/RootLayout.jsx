@@ -4,13 +4,13 @@ import { Outlet } from 'react-router-dom'
 
 const RootLayout = () => {
     return(
-        <>
+        <div>
         
             <Header />
-                <Outlet />
+                <Outlet context={{user: "Hard"}}/>
             <Footer />
         
-        </>
+        </div>
     )
 }
 
