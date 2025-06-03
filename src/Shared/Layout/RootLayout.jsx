@@ -4,7 +4,7 @@ import { Outlet } from 'react-router-dom'
 
 const RootLayout = () => {
     return(
-        <div>
+        <div className='bg-gray-200 min-h-screen'>
         
             <Header />
                 <Outlet context={{user: "Hard"}}/>

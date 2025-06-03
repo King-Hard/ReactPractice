@@ -4,6 +4,7 @@ import Home from './Components/NavBar/HomePage/Home'
 import About from './Components/NavBar/AboutPage/About'
 import Contact from './Components/NavBar/ContactPage/Contact'
 import Timer from './Components/NavBar/TimerPage/Timer'
+import CounterApp from "./Components/NavBar/CounterApp/CounterApp"
 import NotFound from "./Components/NotFound"
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/About" element={<About />}/>
         <Route path="/Contact" element={<Contact />}/>
         <Route path="/Timer" element={<Timer />}/>
+        <Route path="/CounterApp" element={<CounterApp />}/>
       </Route>
       <Route path="*" element={<NotFound />}/>
     </Routes>

@@ -12,6 +12,7 @@ const Header = () => {
                     <Link to="/About" className='hover:text-violet-500'>About</Link>
                     <Link to="/Contact" className='hover:text-green-500'>Contact</Link>
                     <Link to="/Timer" className='hover:text-blue-500'>Timer</Link>
+                    <Link to="/CounterApp" className='hover:text-yellow-500'>CounterApp</Link>
                 </div>
             </div>
         
