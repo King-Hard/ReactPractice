@@ -33,6 +33,7 @@ const CounterApp = () => {
 
         <div className="flex justify-center mt-30 font-medium">
             <div className="space-x-5 space-y-10">
+                <p className="text-center"> <span className="text-green-500">Maximum Increment </span>(10) and <span className="text-red-500">Minimum Increment </span>(0)</p>
                 <p className="p-10 bg-white border rounded-xl">Count: {count}</p>
 
                 <button onClick={increment} className="bg-green-300 p-3 w-35 rounded-lg hover:bg-green-500">Increment (+)</button>
