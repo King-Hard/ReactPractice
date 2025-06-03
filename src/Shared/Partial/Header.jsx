@@ -7,12 +7,12 @@ const Header = () => {
             <div className='flex justify-between border rounded-2xl rounded-t-none p-10'>
                 <div>Header</div>
 
-                <div className='space-x-10'>
+                <div className='space-x-5'>
                     <Link to="/" className='hover:text-red-500'>Home</Link>
                     <Link to="/About" className='hover:text-violet-500'>About</Link>
                     <Link to="/Contact" className='hover:text-green-500'>Contact</Link>
                     <Link to="/Timer" className='hover:text-blue-500'>Timer</Link>
-                    <Link to="/CounterApp" className='hover:text-yellow-500'>CounterApp</Link>
+                    <Link to="/CounterApp" className='hover:text-yellow-500'>Incre/Decre</Link>
                 </div>
             </div>
         
