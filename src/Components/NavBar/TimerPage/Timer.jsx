@@ -2,6 +2,7 @@ import {useRef, useState} from 'react'
 
 const Timer = () => {
 
+    const [message, setMessage] = useState()
     const timeContainer = useRef(null)
     const [time, setTime] = useState(0)
 
@@ -17,6 +18,7 @@ const Timer = () => {
         clearInterval(timeContainer.current)
         setTime(0)
     }
+
     return(
 
         <div className='flex justify-center mt-40 font-medium'>
